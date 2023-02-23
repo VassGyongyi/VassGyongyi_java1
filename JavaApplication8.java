@@ -13,9 +13,14 @@ public class JavaApplication8 {
    
     public static void main(String[] args) {
         // TODO code application logic here
+        elso10SzamOsszege();
+        osszead(1,2);
+        kiir("Az elso 10 szám összege: "+ elso10SzamOsszege());
+        int szam1 = 7, szam2 = 4;
+        kiir("%d+%d=%d"+ osszead(szam1, szam2));
         
     }
-    private static void elso10SzamOsszege(){
+    private static int elso10SzamOsszege(){
         int osszeg =0;
         for (int i = 0; i< 10; i++){
             osszeg += i;}
@@ -23,11 +28,11 @@ public class JavaApplication8 {
         
     }
     
-    private static void osszead(int a, int b){
+    private static int osszead(int a, int b){
         return a+b;
     }
-    private static void (int a, int b, int osszeg){
-        System.out.println("%d + %d = %d", a,b, osszeg);
+    private static void kiir(String szoveg){
+        System.out.println(szoveg);
              
     }
 }
