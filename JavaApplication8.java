@@ -17,21 +17,10 @@ public class JavaApplication8 {
         //osszead(1,2);
         kiir("Az elso 10 szám összege: "+ elso10SzamOsszege());
        
-        
-        int kimenet = 0;
-        int szam1 = 7, szam2 = 4, szam3 = 5, szam4 =9;
-        kimenet = osszead(szam1, szam2);
-        kimenet = osszead(kimenet, szam3);
-        kimenet = osszead(kimenet, szam4);
         kiir(Integer.toString(kimenet));
-        
-        osszegharom =0;
-        float gyok = 0;
-        osszegharom = osszead(szam1, szam2);
-        osszegharom = osszead(gyok, szam3);
-        gyok = Math.sqrt(osszegharom);
-        kiir(gyok);
-        
+               
+        kiir(Integer.toString(osszeadnegy()));
+        kiir(Float.toString(gyok()));
         }
         //kiir("%d+%d=%d"+ osszead(szam1, szam2));
         
@@ -47,8 +36,27 @@ public class JavaApplication8 {
     private static int osszead(szam1, szam2){
         return a+b;
     }
+    private static int osszeadnegy(){
+    
+    int kimenet = 0;
+    int szam1 = 7, szam2 = 4, szam3 = 5, szam4 =9;
+        kimenet = osszead(szam1, szam2);
+        kimenet = osszead(kimenet, szam3);
+        kimenet = osszead(kimenet, szam4);
+    
+    }
+    private static float gyok{
+    osszegharom =0;
+        float gyok = 0;
+        osszegharom = osszead(szam1, szam2);
+        osszegharom = osszead(gyok, szam3);
+        gyok = Math.sqrt(osszegharom);
+        
+    }
+
     private static void kiir(String szoveg){
         System.out.println(szoveg);
              
     }
+    
 }
